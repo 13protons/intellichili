@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>intellichili</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/intellichili.js"></script>
+
+  
+</head>
+<body>
+  <div data-role="page" id="page" class="pure-g">
+      <div id="header" class="pure-u-1">
+          <img src="images/brain.png" />
+		  <h1>Intelli<span>CHILI</span></h1>
+		  <img src="images/chili.png" />
+      </div>
+      <div id="content" class="pure-u-1">
+          <div class="status section">
+			  <h3 class="section_title">Cooker</h3>
+			  <ul class="pure-g">
+					  <li class="pure-u-1-4"><a href="#on" class="status_on pure-button" data-value="on"> On</a></li>
+					  <li class="pure-u-1-4"><a href="#off"  class="status_off pure-button active" data-value="off"> Off</a></li>
+				  </ul>
+		  
+		  </div>
+		  
+		  
+		  <div class="temp section">
+			  <h3 class="section_title">Temperture</h3>
+			  <div data-role="navbar" class="heat pure-u-1">
+				  <ul class="pure-g">
+
+					  <li class="pure-u-1-4"><a href="#warm" class="pure-button" data-temp="warm"> Warm</a></li>
+					  <li class="pure-u-1-4"><a href="#low"  class="pure-button" data-temp="low"> Low</a></li>
+					  <li class="pure-u-1-4"><a href="#med"  class="pure-button" data-temp="med"> Med</a></li>
+					  <li class="pure-u-1-4"><a href="#high" class="pure-button" data-temp="high"> High</a></li>
+				  </ul>
+			  </div>
+		  </div>
+		  <div class="timer section">
+		  	  <h3 class="section_title">Timer</h3>
+			  <ul class="pure-g">
+			  	<li class="pure-u-1-4"><a class="pure-button timer_less button-xlarge">-</a></li>
+				<li class="pure-u-1-2 timer_show" id="time_show">
+					<span class="hour">0</span>:<span class="minutes">00</span><span class="seconds">00</span></li>
+				<li class="pure-u-1-4"><a class="pure-button timer_more button-xlarge">+</a></li>
+				<li class="pure-u-1 spacer"></li>
+				
+				<li class="pure-u-1 finished">
+					 <div>
+						  <label for="timer_done_action">
+							  When done, set temp to:
+						  </label>
+						  <select id="timer_done_action">
+							  <option value="off" selected>
+								  Off
+							  </option>
+							  <option value="warm">
+								  Warm
+							  </option>
+							  <option value="low">
+								  Low
+							  </option>
+							  <option value="med">
+								  Med
+							  </option>
+							  <option value="high">
+								  High
+							  </option>
+						  </select>
+					  </div>
+				</li>
+				  <li class="pure-u-1">
+					  <a class="pure-button timer_toggle">Timer</a>
+					  <a class="pure-button timer_reset">Reset</a>
+				  </li>
+			  </ul>
+		 </div>
+         
+          
+      </div>
+  </div>
+</body>
+</html>
